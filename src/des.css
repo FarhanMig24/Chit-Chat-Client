@@ -1,0 +1,227 @@
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    
+  }
+  .pageContainer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+  }
+  
+  .header {
+    padding: 10px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to left, #000000 50% , #434242 );
+    z-index: 2;
+    /* background-size: 50% 100%; */
+    /* background-repeat: no-repeat; */
+  }
+  
+  .chatContainer {
+    width: 100%;
+    /* padding: 15px; */
+    /* max-width: 800px; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+  }
+
+  .chatContainer2 {
+   
+    width: 100%;
+    max-width: 800px;
+    flex: 1;
+    display: flex;
+    
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+  }
+  
+  .chatBox {
+    flex: 1;
+    /* overflow-y: auto; */
+    /* padding: 10px; */
+  }
+  
+  .usernameInputContainer {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #eee;
+  }
+  
+  .usernameInput {
+    padding: 8px;
+    margin-right: 8px;
+    font-size: 14px;
+  }
+  
+  .connectButton {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .inputContainer {
+    display: flex;
+    margin-bottom: 10px;
+    /* padding: 10px; */
+    background: #eee;
+  }
+  
+  .input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 8px;
+    font-size: 14px;
+  }
+  
+  .button {
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .messagesList {
+    max-height: 70vh;
+    list-style: none;
+    padding: 0;
+    overflow-y: auto;
+  }
+  
+  .messageItem {
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .welcomeAddMessage {
+    background: #8cff66;
+    margin: 5px 0;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .leftMessage {
+    background: #ff6666;
+    margin: 5px 0;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .profileContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profilePic {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .defaultProfilePic {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    border-radius: 50%;
+    background-color: #ddd; /* Specify a background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    margin-right: 10px;
+  }
+  
+  .username {
+    font-weight: bold;
+  }
+
+  .usernamemy {
+    font-weight: bold;
+  }
+  .myprofileContainer {
+
+    width: 70%;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content:flex-end;
+    margin-right: 10px;
+  }
+  
+  .messageContent {
+    width: fit-content;
+    max-width: 70%;
+    flex: 1;
+    display: inline-flex;
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .myMessageContent {
+    width: fit-content;
+    max-width: 70%;
+    background: #a3f3ff;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content:flex-end;
+
+  }
+  
+  .content {
+   
+    margin-left: 5px;
+    width: 80%;
+    margin-right:auto;
+
+  }
+  
+  .timestamp {
+    font-size: 12px;
+    color: #888;
+    margin-top: auto;
+    margin-right: 0px;
+    margin-left: 15px;
+  }
+
+  .myContent {
+    margin-left: auto;
+    width: 80%;
+    margin-right:auto;
+
+  }
+  
+  .myTimestamp {
+    font-size: 12px;
+    color: #888;
+    margin-top: auto;
+    margin-right: 0px;
+    margin-left: 15px;
+  }
+  

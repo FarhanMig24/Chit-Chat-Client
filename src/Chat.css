@@ -1,0 +1,274 @@
+.pageContainer {
+  position: absolute;
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.galaxy {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stars1 {
+  position: absolute;
+  width: 50%; /* Double the size to cover the entire viewport */
+  height: 50%;
+  background: url('star.png') repeat top left;
+  background-size: 15px; /* Size of the individual stars */
+  animation: galaxyAnimation1 30s linear infinite;
+  /* top: 50%; */
+  /* left: 50%; */
+  transform: translate(-50%, 0%); /* Center the stars */
+}
+
+.stars2 {
+  position: absolute;
+  width: 50%; /* Double the size to cover the entire viewport */
+  height: 50%;
+  background: url('star.png') repeat top left;
+  background-size: 15px; /* Size of the individual stars */
+  animation: galaxyAnimation2      30s linear infinite;
+  /* top: 50%; */
+  /* left: 50%; */
+  transform: translate(50%, 100%); /* Center the stars */
+}
+.stars3 {
+  position: absolute;
+  width: 50%; /* Double the size to cover the entire viewport */
+  height: 50%;
+  background: url('star.png') repeat top left 10px;
+  background-size: 15px; /* Size of the individual stars */
+  animation: galaxyAnimation3 30s linear infinite;
+  /* top: 50%; */
+  /* left: 50%; */
+  transform: translate(-50%, 100%); /* Center the stars */
+}
+
+.stars4 {
+  position: absolute;
+  width: 50%; /* Double the size to cover the entire viewport */
+  height: 50%;
+  background: url('star.png') repeat top left;
+  background-size: 15px; /* Size of the individual stars */
+  animation: galaxyAnimation4 30s linear infinite;
+  /* top: 50%; */
+  /* left: 50%; */
+  transform: translate(50%, 0%); /* Center the stars */
+}
+
+
+@keyframes galaxyAnimation1 {
+  from {
+    background-position: 50% 50%; /* Start from the center */
+  }
+  to {
+    background-position: 0 0; /* Move radially outwards */
+  }
+}
+
+@keyframes galaxyAnimation2 {
+  from {
+    background-position: 50% 50%; /* Start from the center */
+  }
+  to {
+    background-position: 100% 100%; /* Move radially outwards */
+  }
+}
+
+@keyframes galaxyAnimation3 {
+  from {
+    background-position: 50% 50%; /* Start from the center */
+  }
+  to {
+    background-position: 0 100%; /* Move radially outwards */
+  }
+}
+
+@keyframes galaxyAnimation4 {
+  from {
+    background-position: 50% 50%; /* Start from the center */
+  }
+  to {
+    background-position: 100% 0%; /* Move radially outwards */
+  }
+}
+.roomSelection {
+  padding: 2%;
+  text-align: center;
+  margin-top: 8%;
+  /* margin-bottom: 20px; Increased margin bottom */
+  z-index: 2;
+  /* opacity: 40%; */
+  /* background-color: rgba(136, 25, 25, 0.5); */
+  backdrop-filter: blur(3px);
+  /* background-color: #ffffff; */
+  border-radius: 10px;
+  
+}
+
+.privateRoomForm {
+  width: 300px;
+  margin: 10%;
+  padding: 20px;
+  /* background-color: #f8f9fa; */
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 2;
+  color: #ffffff;
+}
+
+.privateRoomForm label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.privateRoomForm input[type="text"] {
+  width: calc(100% - 22px);
+  padding: 8px;
+  margin: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 3px;
+}
+
+.privateRoomForm button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
+}
+
+.privateRoomForm button:hover {
+  background-color: #0056b3;
+}
+
+.createRoomForm {
+  width: 300px;
+  margin: 10%;
+  padding: 20px;
+  /* background-color: #f8f9fa; */
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 2;
+  color: lime;
+}
+
+.createRoomForm p {
+  margin-bottom: 20px;
+}
+
+.createRoomForm button {
+  width: 45%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.createRoomForm button:last-child {
+  margin-left: 10%;
+  background-color: #dc3545;
+}
+
+.createRoomForm button:hover {
+  background-color: #0056b3;
+}
+
+.createRoomForm button:last-child:hover {
+  background-color: #c82333;
+}
+
+.privateRoomForm2 {
+  width: 300px;
+  margin: 10%;
+  padding: 20px;
+  /* background-color: #f8f9fa; */
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 2;
+}
+
+.privateRoomForm2 button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.privateRoomForm2 button:last-child {
+  margin-top: 5px;
+  background-color: #dc3545;
+}
+
+.privateRoomForm2 button:hover {
+  background-color: #0056b3;
+}
+
+.privateRoomForm2 button:last-child:hover {
+  background-color: #c82333;
+}
+
+
+.pvtbutton {
+  background-color: rgba(255, 0, 0, 0.82);
+  color: #fff;
+  padding: 30px; /* Increased padding for larger buttons */
+  font-size: 24px; /* Increased font size */
+  border: none;
+  cursor: pointer;
+  margin: 20px; /* Increased margin between buttons */
+  width: 150px; /* Set fixed width to make buttons square */
+  height: 150px; /* Set fixed height to make buttons square */
+  transition: transform 1s ease-in-out;
+  opacity: 100%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.9);
+}
+
+.pubbutton
+{
+  background-color: rgba(90, 231, 25, 0.82);  
+  color: #ffffff;
+  padding: 30px; /* Increased padding for larger buttons */
+  font-size: 24px; /* Increased font size */
+  border: none;
+  cursor: pointer;
+  margin: 20px; /* Increased margin between buttons */
+  width: 150px; /* Set fixed width to make buttons square */
+  height: 150px; /* Set fixed height to make buttons square */
+  transition: transform 1s ease-in-out;
+  opacity: 100%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.9);
+}
+
+.roomSelection button:hover {
+  transform:scale(120%);
+}

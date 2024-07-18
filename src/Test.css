@@ -1,0 +1,113 @@
+.pageContainer {
+    position: absolute;
+    width:100%;
+    height: 100%;
+}
+
+
+  
+.galaxy {
+position: absolute;
+width: 100%;
+height: 100%;
+/* overflow: hidden; */
+background-color: black;
+
+/* display: flex; */
+/* justify-content: space-between; */
+/* align-items: center; */
+}
+
+.header {
+    padding: 10px;
+    /* color: rgb(255, 255, 255); */
+    width: 100%;
+    opacity: 90%;
+    background-image: linear-gradient(to left, #000000 50% , #434242 );
+    /* z-index: 1; */
+    /* background-size: 50% 100%; */
+    /* background-repeat: no-repeat; */
+}
+.stars1 {
+position: absolute;
+width: 50%; /* Double the size to cover the entire viewport */
+height: 50%;
+background: url('star.png') repeat top left;
+background-size: 15px; /* Size of the individual stars */
+animation: galaxyAnimation1 30s linear infinite;
+/* top: 50%; */
+/* left: 50%; */
+transform: translate(-50%, 0%); /* Center the stars */
+}
+
+.stars2 {
+position: absolute;
+width: 50%; /* Double the size to cover the entire viewport */
+height: 50%;
+background: url('star.png') repeat top left;
+background-size: 15px; /* Size of the individual stars */
+animation: galaxyAnimation2      30s linear infinite;
+/* top: 50%; */
+/* left: 50%; */
+transform: translate(50%, 100%); /* Center the stars */
+}
+.stars3 {
+position: absolute;
+width: 50%; /* Double the size to cover the entire viewport */
+height: 50%;
+background: url('star.png') repeat top left 10px;
+background-size: 15px; /* Size of the individual stars */
+animation: galaxyAnimation3 30s linear infinite;
+/* top: 50%; */
+/* left: 50%; */
+transform: translate(-50%, 100%); /* Center the stars */
+}
+
+.stars4 {
+position: absolute;
+width: 50%; /* Double the size to cover the entire viewport */
+height: 50%;
+background: url('star.png') repeat top left;
+background-size: 15px; /* Size of the individual stars */
+animation: galaxyAnimation4 30s linear infinite;
+/* top: 50%; */
+/* left: 50%; */
+transform: translate(50%, 0%); /* Center the stars */
+}
+
+
+@keyframes galaxyAnimation1 {
+from {
+    background-position: 50% 50%; /* Start from the center */
+}
+to {
+    background-position: 0 0; /* Move radially outwards */
+}
+}
+
+@keyframes galaxyAnimation2 {
+from {
+    background-position: 50% 50%; /* Start from the center */
+}
+to {
+    background-position: 100% 100%; /* Move radially outwards */
+}
+}
+
+@keyframes galaxyAnimation3 {
+from {
+    background-position: 50% 50%; /* Start from the center */
+}
+to {
+    background-position: 0 100%; /* Move radially outwards */
+}
+}
+
+@keyframes galaxyAnimation4 {
+from {
+    background-position: 50% 50%; /* Start from the center */
+}
+to {
+    background-position: 100% 0%; /* Move radially outwards */
+}
+}
